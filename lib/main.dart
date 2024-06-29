@@ -1,15 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:attouweb/pages/home.dart';
+import 'package:mmtweb/pages/home.dart';
 
 void main() {
-  runApp(const AttouWeb());
+  runApp(const MMTWeb());
 }
 
-class AttouWeb extends StatelessWidget {
-  const AttouWeb({super.key});
+class MMTWeb extends StatelessWidget {
+  const MMTWeb({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: Home(), debugShowCheckedModeBanner: false,);
+    return MaterialApp(
+      initialRoute: '/home',
+      routes: {
+        '/home': (context) => const Home(),
+      },
+      debugShowCheckedModeBanner: false,
+    );
   }
 }
