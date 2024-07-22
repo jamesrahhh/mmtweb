@@ -1,2 +1,2 @@
 # MMTWeb
-A Flutter website for MomMadeThis.
+A Flutter storefront website for MomMadeThis.
